@@ -17,7 +17,7 @@ public class Module {
 		GetAssignmentFiles();
 		GetRubric();
         
-        assignment =  = new Assignment();
+        assignment = new Assignment();
 	}
 	
     /**

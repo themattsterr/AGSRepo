@@ -13,11 +13,13 @@ public class Module {
 	 * @return
 	 */
 	public void GetGraderSpecification(){
+		assignment = new Assignment();
+
 		GetAssignmentInfo();
 		GetAssignmentFiles();
 		GetRubric();
         
-        assignment = new Assignment();
+        
 	}
 	
     /**

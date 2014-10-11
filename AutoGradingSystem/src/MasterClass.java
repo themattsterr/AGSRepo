@@ -1,4 +1,4 @@
-
+import GraderSpec.*;
 
 public class MasterClass {
 	

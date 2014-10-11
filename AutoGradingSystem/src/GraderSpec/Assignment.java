@@ -100,7 +100,5 @@ public class Assignment {
     public Rubric GetRubric(){
     	return _rubric;
     }
-
-    
-		
+	
 }

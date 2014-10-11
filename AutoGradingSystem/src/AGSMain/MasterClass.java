@@ -1,5 +1,6 @@
 package AGSMain;
 
+import UserInterface.*;
 import GraderSpec.*;
 
 public class MasterClass {
@@ -9,6 +10,6 @@ public class MasterClass {
      */
     public static void main(String[] args) {
     	//Create new instance of main UI class
-    	//MainWindow window = new MainWindow();
+    	MainWindow window = new MainWindow();
     }
 }

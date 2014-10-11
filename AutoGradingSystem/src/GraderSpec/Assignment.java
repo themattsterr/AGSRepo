@@ -2,19 +2,19 @@ package GraderSpec;
 
 public class Assignment {
 	
-	private String _title;
-	private String _description;
-	private String _classCode;
-	private String _sectionCode;
+	private String _title = "";
+	private String _description = "";
+	private String _classCode = "";
+	private String _sectionCode = "";
 	// assignment information file path
-	private String _infoFilePath;
+	private String _infoFilePath = "";
 	//
-	private String _officialInputFilePath;
+	private String _officialInputFilePath = "";
 	//
-	private String _solutionSourceFilePath;
+	private String _solutionSourceFilePath = "";
 	//
-	private String _officialOutputFilePath;
-	private String _commandLineInstruction;
+	private String _officialOutputFilePath = "";
+	private String _commandLineInstruction = "";
 	private Rubric _rubric;
 
 	public Assignment(){

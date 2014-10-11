@@ -2,25 +2,93 @@ package GraderSpec;
 
 public class Assignment {
 	
-	private String _title;
-	private String _description;
-	private String _classCode;
-	private String _sectionCode;
+	private String _title = "";
+	private String _description = "";
+	private String _classCode = "";
+	private String _sectionCode = "";
 	// assignment information file path
-	private String _infoFilePath;
+	private String _infoFilePath = "";
 	//
-	private String _officialInputFilePath;
+	private String _officialInputFilePath = "";
 	//
-	private String _solutionSourceFilePath;
+	private String _solutionSourceFilePath = "";
 	//
-	private String _officialOutputFilePath;
-	private String _commandLineInstruction;
+	private String _officialOutputFilePath = "";
+	private String _commandLineInstruction = "";
 	private Rubric _rubric;
 
+	/**
+	 * Empty Assignment constructor
+	 */
 	public Assignment(){
-		
+		_title = "Empty Assignment";
+		_rubric = new Rubric();
 	}
-    
+	
+	/**
+	 * Constructor for Assignment without rubric and I/O stuff
+	 * @param title
+	 * @param description
+	 * @param classCode
+	 * @param sectionCode
+	 */
+	public Assignment(String title, String description, String classCode, String sectionCode){
+		_title = title;
+		_description = description;
+		_classCode = classCode;
+		_sectionCode = sectionCode;
+		_rubric = new Rubric();
+	}
+	
+	/**
+	 * Constructor for Assignment without rubric
+	 * @param title
+	 * @param description
+	 * @param classCode
+	 * @param sectionCode
+	 * @param inputFilePath
+	 * @param sourceFilePath
+	 * @param outputFilePath
+	 * @param commandLineInstruction
+	 */
+	public Assignment(String title, String description, String classCode, String sectionCode, String infoFilePath, String inputFilePath, String sourceFilePath, String outputFilePath, String commandLineInstruction){
+		_title = title;
+		_description = description;
+		_classCode = classCode;
+		_sectionCode = sectionCode;
+		_infoFilePath = infoFilePath;
+		_officialInputFilePath = inputFilePath;
+		_officialOutputFilePath = sourceFilePath;
+		_solutionSourceFilePath = outputFilePath;
+		_commandLineInstruction = commandLineInstruction;
+		_rubric = new Rubric();
+	}
+	
+	/**
+	 * Constructor for Assignment
+	 * @param title
+	 * @param description
+	 * @param classCode
+	 * @param sectionCode
+	 * @param inputFilePath
+	 * @param sourceFilePath
+	 * @param outputFilePath
+	 * @param commandLineInstruction
+	 * @param rubric
+	 */
+	public Assignment(String title, String description, String classCode, String sectionCode, String infoFilePath, String inputFilePath, String sourceFilePath, String outputFilePath, String commandLineInstruction, Rubric rubric){
+		_title = title;
+		_description = description;
+		_classCode = classCode;
+		_sectionCode = sectionCode;
+		_infoFilePath = infoFilePath;
+		_officialInputFilePath = inputFilePath;
+		_officialOutputFilePath = sourceFilePath;
+		_solutionSourceFilePath = outputFilePath;
+		_commandLineInstruction = commandLineInstruction;
+		_rubric = rubric;
+	}
+	
     public void SetTitle(String title){
         _title = title;
     }

@@ -1,3 +1,5 @@
+package AGSMain;
+
 import GraderSpec.*;
 
 public class MasterClass {

@@ -23,23 +23,29 @@ public class Module {
 	}
 	
     /**
-     *
+     * Gets information values from GUI 
      *
      */
-	public void AssignmentInfo(){
+	public void GetAssignmentInfo(){
 		//get each fields current values in assignment info
-        assignment.SetTitle(titleInputTextBox.GetText());
+        //assignment.SetTitle(titleInputTextBox.GetText());
 		
 	}
 	
-	public void AssignmentFiles(){
+	// Assignment aove
+	public void GetAssignmentFiles(){
 		//get each fields current values in assignment files
 	}
 
+	/**
+     * Gets rubric values from GUI 
+     *
+     */
 	public void GetRubric(){
 		
 	}
     
+	//Things Here and then some
     public Assignment GetAssignment(){
         return assignment;
     }

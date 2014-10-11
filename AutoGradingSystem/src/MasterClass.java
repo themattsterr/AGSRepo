@@ -1,11 +1,11 @@
-
+import GraderSpec.*;
 
 public class MasterClass {
 	
-	
-	
-	
-	public static int main(){
-		return 0;
-	}
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+    	//MainWindow window = new MainWindow();
+    }
 }

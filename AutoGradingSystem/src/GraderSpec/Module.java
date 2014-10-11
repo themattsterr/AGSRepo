@@ -22,6 +22,12 @@ public class Module {
         
 	}
 	
+	public Assignment CreateAssignment(){
+		Assignment assignment = new Assignment();
+		
+		return assignment;
+	}
+	
     /**
      * Gets information values from GUI 
      *
